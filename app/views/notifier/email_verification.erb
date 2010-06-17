@@ -1,0 +1,5 @@
+Dear <%= @user.full_name.present? ? @user.full_name : @user.login %>!
+
+Please, confirm your new email address by following this link:
+
+<%= url_for :controller => 'users', :action => 'email', :id => @user.email_verification_code, :only_path => false %>

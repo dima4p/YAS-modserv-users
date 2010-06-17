@@ -1,0 +1,47 @@
+<h1>New owner</h1>
+
+<% form_for(@owner) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :type_type %><br />
+    <%= f.select(:type_type, [ ['Service','Service'],
+	['Application','Application'] ]) %>
+  </p>
+  <p>
+    <%= f.label :application_id %><br />
+    <%= f.text_field :application_id %>
+  </p>
+  <p>
+    <%= f.label :service_id %><br />
+    <%= f.text_field :service_id %>
+  </p>
+  <p>
+    <%= f.label :password_reset_type %><br />
+    <%= f.select(:password_reset_type, [ ['none','none'],
+	['email','email'],
+	['email_�ode','email_�ode'],
+	['email_code_email','email_code_email'] ]) %>
+  </p>
+  <p>
+    <%= f.label :email_edit_type %><br />
+    <%= f.select(:email_edit_type, [ ['none','none'],
+	['email_code','email_code'] ]) %>
+  </p>
+  <p>
+    <%= f.label :registration_confirm_type %><br />
+    <%= f.select(:registration_confirm_type, [ ['none','none'],
+	['email_code','email_code'] ]) %>
+  </p>
+  <p>
+    <%= f.label :authorization_type %><br />
+    <%= f.select(:authorization_type, [ ['login','login'],
+	['login_password','login_password'],
+	['device','device'] ]) %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', owners_path %>

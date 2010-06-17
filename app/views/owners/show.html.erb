@@ -1,0 +1,38 @@
+<p>
+  <b>Type type:</b>
+  <%=h @owner.type_type %>
+</p>
+
+<p>
+  <b>Application:</b>
+  <%=h @owner.application_id %>
+</p>
+
+<p>
+  <b>Service:</b>
+  <%=h @owner.service_id %>
+</p>
+
+<p>
+  <b>Password reset type:</b>
+  <%=h @owner.password_reset_type %>
+</p>
+
+<p>
+  <b>Email edit type:</b>
+  <%=h @owner.email_edit_type %>
+</p>
+
+<p>
+  <b>Registration confirm type:</b>
+  <%=h @owner.registration_confirm_type %>
+</p>
+
+<p>
+  <b>Authorization type:</b>
+  <%=h @owner.authorization_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_owner_path(@owner) %> |
+<%= link_to 'Back', owners_path %>

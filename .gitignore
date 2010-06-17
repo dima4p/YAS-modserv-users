@@ -1,0 +1,11 @@
+*~
+*.swp
+log/*log
+tmp/**/*
+config/database.yml
+config/email.yml
+db/*.sqlite3
+db/schema.rb
+tmp/pids
+tmp/restart.txt
+

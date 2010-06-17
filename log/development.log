@@ -1,0 +1,2365 @@
+# Logfile created on Thu Apr 08 16:09:10 +0400 2010
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-08 16:09:19) [GET]
+  Parameters: {"id"=>"9"}
+User Load (0.4ms)  SELECT * FROM "users" WHERE ("users"."id" = 9) 
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=9):
+  app/controllers/users_controller.rb:18:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (104.9ms)
+Rendered rescues/_request_and_response (10.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#9 (for 127.0.0.1 at 2010-04-08 16:11:20) [POST]
+  Parameters: {" "=>nil}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (367.6ms)
+Rendered rescues/_request_and_response (10.6ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-08 18:11:31) [GET]
+  Parameters: {"id"=>"9"}
+User Load (0.4ms)  SELECT * FROM "users" WHERE ("users"."id" = 9) 
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=9):
+  app/controllers/users_controller.rb:21:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-08 18:11:44) [GET]
+  Parameters: {"id"=>"-9"}
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 73ms (View: 2, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-08 18:15:33) [GET]
+  Parameters: {"id"=>"-9"}
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 864ms (View: 7, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-08 18:16:12) [GET]
+  Parameters: {"id"=>"9"}
+User Load (0.4ms)  SELECT * FROM "users" WHERE ("users"."id" = 9) 
+Completed in 98ms (View: 1, DB: 0) | 404 Not Found [http://localhost/users/9.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-08 18:16:19) [GET]
+  Parameters: {"id"=>"-9"}
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 75ms (View: 3, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-08 18:17:22) [GET]
+  Parameters: {"id"=>"-9"}
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 198ms (View: 2, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-08 18:19:34) [GET]
+  Parameters: {"id"=>"-9"}
+UsersController#check_id #<ActiveRecord::Errors:0xb67b008c @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb67af90c @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 63ms (View: 4, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-08 18:19:50) [GET]
+  Parameters: {"id"=>"-9"}
+UsersController#check_id #<ActiveRecord::Errors:0xb6946cac @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb694652c @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 38ms (View: 2, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-08 18:21:37) [GET]
+  Parameters: {"id"=>"-9"}
+UsersController#check_id #<ActiveRecord::Errors:0xb68e2ae0 @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb68e2360 @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 37ms (View: 3, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-08 18:24:34) [GET]
+  Parameters: {"id"=>"-9"}
+UsersController#check_id #<ActiveRecord::Errors:0xb687e7ac @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb687e02c @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 248ms (View: 7, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-08 18:29:35) [GET]
+  Parameters: {"id"=>"-9"}
+UsersController#check_id #<ActiveRecord::Errors:0xb6ac9908 @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb6ac9188 @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 65ms (View: 3, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-08 18:31:01) [GET]
+  Parameters: {"id"=>"-9"}
+UsersController#check_id #<ActiveRecord::Errors:0xb6a404b4 @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb6a3fd34 @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 87ms (View: 11, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-08 18:31:25) [GET]
+  Parameters: {"id"=>"-9"}
+UsersController#check_id #<ActiveRecord::Errors:0xb69b7678 @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb69b6ef8 @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 71ms (View: 11, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-11 17:11:29) [GET]
+  Parameters: {"id"=>"-9"}
+UsersController#check_id #<ActiveRecord::Errors:0xb68d4170 @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb68d39f0 @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 794ms (View: 73, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-12 00:12:01) [GET]
+  Parameters: {"id"=>"-9"}
+UsersController#check_id #<ActiveRecord::Errors:0xb6b1ae0c @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb6b1a68c @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 101ms (View: 32, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-12 16:06:04) [GET]
+  Parameters: {"id"=>"-9"}
+UsersController#check_id #<ActiveRecord::Errors:0xb6aafe54 @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb6aaf6c0 @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 2821ms (View: 383, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-04-13 09:28:35) [GET]
+  Parameters: {"id"=>"-9"}
+UsersController#check_id #<ActiveRecord::Errors:0xb6a1a818 @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb6a1a098 @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 3166ms (View: 226, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+SQL (1.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.3ms)  select sqlite_version(*)
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.4ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.1ms)  PRAGMA index_list("users")
+SQL (1.2ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+Migrating to AddPerishableTokenToUsers (20100411203119)
+SQL (0.3ms)  select sqlite_version(*)
+SQL (1.2ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.8ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (0.3ms)  select sqlite_version(*)
+SQL (1.1ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (0.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (0.5ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (0.4ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (1.1ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.4ms)  INSERT INTO schema_migrations (version) VALUES ('20100411203119')
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (4.7ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.6ms)  PRAGMA index_list("users")
+SQL (0.3ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (12.9ms)  PRAGMA index_info('index_users_on_login')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+SQL (0.5ms)  select sqlite_version(*)
+SQL (1.1ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.2ms)  PRAGMA index_list("owners")
+SQL (3.1ms)  PRAGMA index_list("users")
+SQL (0.3ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_login')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+SQL (0.3ms)  select sqlite_version(*)
+SQL (1.6ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (18.5ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (14.4ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) 
+SQL (10.9ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (8.2ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (7.7ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (7.3ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (8.9ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (9.5ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (9.5ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (1.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM "schema_migrations"
+SQL (4.7ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100411203119')
+SQL (3.8ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100318215128')
+SQL (3.0ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100322103304')
+SQL (3.8ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100313191856')
+User Load (4.5ms)  SELECT * FROM "users" 
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+User Load (0.4ms)  SELECT * FROM "users" WHERE ("users"."password_reset_code" = 'e') LIMIT 1
+User Load (0.3ms)  SELECT * FROM "users" 
+Owner Load (0.7ms)  SELECT * FROM "owners" 
+Owner Load (8.9ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'test' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (14.6ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '4deb81c4bef558e7468b4c7368854d06260434651696374f8912f85a54b7c3db6a048f5441fca09f59af09f9eae29e12d8399343a20bce8fe3615f17ecb2ac08') LIMIT 1
+User#attributes= {"login"=>"test"} {}
+Owner Load (1.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.2ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'test' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.2ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '4deb81c4bef558e7468b4c7368854d06260434651696374f8912f85a54b7c3db6a048f5441fca09f59af09f9eae29e12d8399343a20bce8fe3615f17ecb2ac08') LIMIT 1
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'test' AND "users".owner_id = 1) LIMIT 1
+Owner Load (9.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '9edd1f22c1f609b3559a8ebaa31c8e34dcd0e3151b2661ec2ce0bdfa0e3b06f3b3bccd3e4f3644fbb00eafd344f341f4da30fa77d6c0ce4f375f7f5c8d7eeb31') LIMIT 1
+User#check_required_fields
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'test' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.6ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '9edd1f22c1f609b3559a8ebaa31c8e34dcd0e3151b2661ec2ce0bdfa0e3b06f3b3bccd3e4f3644fbb00eafd344f341f4da30fa77d6c0ce4f375f7f5c8d7eeb31') LIMIT 1
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'test' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '9edd1f22c1f609b3559a8ebaa31c8e34dcd0e3151b2661ec2ce0bdfa0e3b06f3b3bccd3e4f3644fbb00eafd344f341f4da30fa77d6c0ce4f375f7f5c8d7eeb31') LIMIT 1
+User#check_required_fields
+Owner Load (1.5ms)  SELECT * FROM "owners" LIMIT 1
+SQL (1.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (0.3ms)  select sqlite_version(*)
+SQL (1.9ms)  DROP INDEX "index_users_on_persistence_token"
+SQL (13.4ms)  DROP INDEX "index_users_on_password_reset_code"
+SQL (1.0ms)  DROP INDEX "index_users_on_login"
+SQL (0.5ms)  DROP INDEX "index_users_on_email_verification_code"
+SQL (0.4ms)  DROP INDEX "index_users_on_device_id"
+SQL (0.3ms)  DELETE FROM schema_migrations WHERE version = '20100411203119'
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.1ms)  PRAGMA index_list("users")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.8ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (3.3ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (0.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (0.6ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (30.1ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (1.2ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (0.3ms)  select sqlite_version(*)
+SQL (4.2ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (0.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (0.6ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (1.8ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (0.3ms)  select sqlite_version(*)
+SQL (1.4ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (0.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (0.6ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (21.8ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (12.4ms)  DROP TABLE "owners"
+SQL (1.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (0.3ms)  select sqlite_version(*)
+SQL (1.1ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (0.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (3.4ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (1.1ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.9ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.9ms)  DROP TABLE "owners"
+SQL (1.2ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (4.4ms)  select sqlite_version(*)
+SQL (5.5ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (0.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (4.8ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (21.2ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (6.2ms)  DROP TABLE "owners"
+SQL (1.2ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (0.3ms)  select sqlite_version(*)
+SQL (3.1ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (0.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (8.7ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.3ms)  INSERT INTO schema_migrations (version) VALUES ('20100411203119')
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.2ms)  PRAGMA index_list("owners")
+SQL (8.7ms)  PRAGMA index_list("users")
+SQL (0.3ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_login')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+Owner Load (1.5ms)  SELECT * FROM "owners" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" LIMIT 1
+SQL (1.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (0.3ms)  select sqlite_version(*)
+SQL (1.1ms)  DROP INDEX "index_users_on_persistence_token"
+SQL (0.5ms)  DROP INDEX "index_users_on_password_reset_code"
+SQL (0.5ms)  DROP INDEX "index_users_on_login"
+SQL (6.1ms)  DROP INDEX "index_users_on_email_verification_code"
+SQL (0.4ms)  DROP INDEX "index_users_on_device_id"
+SQL (0.3ms)  DELETE FROM schema_migrations WHERE version = '20100411203119'
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.4ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (1.6ms)  PRAGMA index_list("owners")
+SQL (0.1ms)  PRAGMA index_list("users")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (3.4ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (1.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (0.5ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (9.4ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.9ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (5.0ms)  DROP TABLE "owners"
+SQL (1.2ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to AddFiledListsToOwner (20100322103304)
+SQL (0.3ms)  select sqlite_version(*)
+SQL (1.2ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (4.0ms)  DROP TABLE "owners"
+SQL (0.7ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("altered_owners")
+SQL (0.4ms)  DROP TABLE "altered_owners"
+SQL (0.5ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255)) 
+SQL (0.2ms)  PRAGMA index_list("owners")
+SQL (0.5ms)  DROP TABLE "owners"
+SQL (12.6ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("altered_owners")
+SQL (0.3ms)  DROP TABLE "altered_owners"
+SQL (0.5ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.4ms)  DROP TABLE "owners"
+SQL (0.5ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime) 
+SQL (8.3ms)  PRAGMA index_list("altered_owners")
+SQL (0.3ms)  DROP TABLE "altered_owners"
+SQL (3.6ms)  DELETE FROM schema_migrations WHERE version = '20100322103304'
+SQL (0.8ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.4ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (2.4ms)  PRAGMA index_list("users")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.4ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+SQL (9.8ms)  ALTER TABLE "owners" ADD "custom_fields" varchar(255)
+SQL (0.5ms)  ALTER TABLE "owners" ADD "required_fields" varchar(255)
+SQL (0.5ms)  ALTER TABLE "owners" ADD "editable_fields" varchar(255)
+SQL (0.4ms)  INSERT INTO schema_migrations (version) VALUES ('20100322103304')
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (0.8ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (0.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (29.1ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (0.4ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (38.2ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.6ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (5.0ms)  DROP TABLE "owners"
+SQL (0.5ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '--- []
+
+', "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("altered_owners")
+SQL (0.3ms)  DROP TABLE "altered_owners"
+SQL (0.5ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''--- []
+
+''', "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.2ms)  PRAGMA index_list("owners")
+SQL (0.4ms)  DROP TABLE "owners"
+SQL (0.6ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255), "editable_fields" varchar(255) DEFAULT '--- []
+
+') 
+SQL (0.1ms)  PRAGMA index_list("altered_owners")
+SQL (0.3ms)  DROP TABLE "altered_owners"
+SQL (0.5ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255), "editable_fields" varchar(255) DEFAULT '''--- []
+
+''') 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.4ms)  DROP TABLE "owners"
+SQL (0.5ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255) DEFAULT '--- []
+
+', "editable_fields" varchar(255) DEFAULT '''') 
+SQL (0.1ms)  PRAGMA index_list("altered_owners")
+SQL (0.4ms)  DROP TABLE "altered_owners"
+SQL (10.1ms)  INSERT INTO schema_migrations (version) VALUES ('20100411203119')
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.2ms)  PRAGMA index_list("owners")
+SQL (0.6ms)  PRAGMA index_list("users")
+SQL (0.3ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_login')
+SQL (8.4ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+Owner Load (0.0ms)  SQLite3::SQLException: database schema has changed: SELECT * FROM "owners" LIMIT 1
+Owner Load (1.1ms)  SELECT * FROM "owners" LIMIT 1
+Owner Load (1.5ms)  SELECT * FROM "owners" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" LIMIT 1
+SQL (0.5ms)  select sqlite_version(*)
+SQL (1.1ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.6ms)  PRAGMA index_list("users")
+SQL (0.3ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_login')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+SQL (0.3ms)  select sqlite_version(*)
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (16.5ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255) DEFAULT '''--- []
+
+''', "editable_fields" varchar(255) DEFAULT '''') 
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (11.6ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) 
+SQL (10.3ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (12.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (6.9ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (8.2ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (10.6ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (10.5ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (8.4ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM "schema_migrations"
+SQL (10.2ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100411203119')
+SQL (3.7ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100318215128')
+SQL (3.8ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100322103304')
+SQL (3.9ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100313191856')
+SQL (7.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (0.3ms)  select sqlite_version(*)
+SQL (1.1ms)  DROP INDEX "index_users_on_persistence_token"
+SQL (0.5ms)  DROP INDEX "index_users_on_password_reset_code"
+SQL (0.5ms)  DROP INDEX "index_users_on_login"
+SQL (0.4ms)  DROP INDEX "index_users_on_email_verification_code"
+SQL (0.5ms)  DROP INDEX "index_users_on_device_id"
+SQL (0.3ms)  DELETE FROM schema_migrations WHERE version = '20100411203119'
+SQL (0.6ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.4ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.2ms)  PRAGMA index_list("owners")
+SQL (0.2ms)  PRAGMA index_list("users")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (5.8ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (0.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (0.4ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (2.6ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (31.0ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255) DEFAULT '''--- []
+
+''', "editable_fields" varchar(255) DEFAULT '''') 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (2.8ms)  DROP TABLE "owners"
+SQL (0.5ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '--- []
+
+', "required_fields" varchar(255) DEFAULT '''', "editable_fields" varchar(255) DEFAULT '''') 
+SQL (0.2ms)  PRAGMA index_list("altered_owners")
+SQL (0.4ms)  DROP TABLE "altered_owners"
+SQL (9.2ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''--- []
+
+''', "required_fields" varchar(255) DEFAULT '''', "editable_fields" varchar(255) DEFAULT '''') 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.4ms)  DROP TABLE "owners"
+SQL (0.5ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255) DEFAULT '''', "editable_fields" varchar(255) DEFAULT '--- []
+
+') 
+SQL (0.1ms)  PRAGMA index_list("altered_owners")
+SQL (0.3ms)  DROP TABLE "altered_owners"
+SQL (0.5ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255) DEFAULT '''', "editable_fields" varchar(255) DEFAULT '''--- []
+
+''') 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.4ms)  DROP TABLE "owners"
+SQL (0.5ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255) DEFAULT '--- []
+
+', "editable_fields" varchar(255) DEFAULT '''') 
+SQL (0.1ms)  PRAGMA index_list("altered_owners")
+SQL (0.3ms)  DROP TABLE "altered_owners"
+SQL (3.4ms)  INSERT INTO schema_migrations (version) VALUES ('20100411203119')
+SQL (0.6ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (20.6ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.2ms)  PRAGMA index_list("owners")
+SQL (0.6ms)  PRAGMA index_list("users")
+SQL (0.3ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_login')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+SQL (0.5ms)  select sqlite_version(*)
+SQL (2.2ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.6ms)  PRAGMA index_list("users")
+SQL (0.3ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (8.5ms)  PRAGMA index_info('index_users_on_login')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+SQL (0.3ms)  select sqlite_version(*)
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (16.2ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255) DEFAULT '''--- []
+
+''', "editable_fields" varchar(255) DEFAULT '''') 
+SQL (8.6ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (15.2ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) 
+SQL (11.0ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (7.8ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (12.4ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (10.7ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (11.6ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (10.2ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (11.4ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM "schema_migrations"
+SQL (7.8ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100411203119')
+SQL (7.5ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100318215128')
+SQL (7.6ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100322103304')
+SQL (3.7ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100313191856')
+Owner Load (1.5ms)  SELECT * FROM "owners" LIMIT 1
+SQL (114.8ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  select sqlite_version(*)
+SQL (16308.1ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (4488.7ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+SQL (16.5ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime) 
+SQL (0.3ms)  INSERT INTO schema_migrations (version) VALUES ('20100313191856')
+Migrating to CreateUsers (20100318215128)
+SQL (17.5ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) 
+SQL (0.3ms)  INSERT INTO schema_migrations (version) VALUES ('20100318215128')
+Migrating to AddFiledListsToOwner (20100322103304)
+SQL (0.9ms)  ALTER TABLE "owners" ADD "custom_fields" varchar(255)
+SQL (0.4ms)  ALTER TABLE "owners" ADD "required_fields" varchar(255)
+SQL (0.5ms)  ALTER TABLE "owners" ADD "editable_fields" varchar(255)
+SQL (0.4ms)  INSERT INTO schema_migrations (version) VALUES ('20100322103304')
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (5.2ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (0.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (0.5ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (18.2ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.2ms)  PRAGMA index_list("owners")
+SQL (12.5ms)  DROP TABLE "owners"
+SQL (0.6ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '--- []
+
+', "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("altered_owners")
+SQL (0.4ms)  DROP TABLE "altered_owners"
+SQL (0.5ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''--- []
+
+''', "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.4ms)  DROP TABLE "owners"
+SQL (0.5ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255), "editable_fields" varchar(255) DEFAULT '--- []
+
+') 
+SQL (2.5ms)  PRAGMA index_list("altered_owners")
+SQL (0.4ms)  DROP TABLE "altered_owners"
+SQL (0.5ms)  CREATE TEMPORARY TABLE "altered_owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255), "editable_fields" varchar(255) DEFAULT '''--- []
+
+''') 
+SQL (17.1ms)  PRAGMA index_list("owners")
+SQL (7.3ms)  DROP TABLE "owners"
+SQL (0.9ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255) DEFAULT '''', "required_fields" varchar(255) DEFAULT '--- []
+
+', "editable_fields" varchar(255) DEFAULT '''') 
+SQL (0.1ms)  PRAGMA index_list("altered_owners")
+SQL (0.3ms)  DROP TABLE "altered_owners"
+SQL (2.7ms)  INSERT INTO schema_migrations (version) VALUES ('20100411203119')
+SQL (2.7ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.2ms)  PRAGMA index_list("owners")
+SQL (12.7ms)  PRAGMA index_list("users")
+SQL (0.3ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_login')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+SQL (44.9ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.4ms)  select sqlite_version(*)
+SQL (17839.5ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (8639.0ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (1.2ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+SQL (5.1ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime) 
+SQL (0.3ms)  INSERT INTO schema_migrations (version) VALUES ('20100313191856')
+Migrating to CreateUsers (20100318215128)
+SQL (17.4ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) 
+SQL (0.3ms)  INSERT INTO schema_migrations (version) VALUES ('20100318215128')
+Migrating to AddFiledListsToOwner (20100322103304)
+SQL (0.9ms)  ALTER TABLE "owners" ADD "custom_fields" varchar(255)
+SQL (0.5ms)  ALTER TABLE "owners" ADD "required_fields" varchar(255)
+SQL (0.5ms)  ALTER TABLE "owners" ADD "editable_fields" varchar(255)
+SQL (10.2ms)  INSERT INTO schema_migrations (version) VALUES ('20100322103304')
+Migrating to AddIndecesToUsers (20100411203119)
+SQL (0.8ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (0.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (7.5ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (0.4ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.4ms)  INSERT INTO schema_migrations (version) VALUES ('20100411203119')
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.6ms)  PRAGMA index_list("owners")
+SQL (0.6ms)  PRAGMA index_list("users")
+SQL (0.3ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (4.8ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (3.6ms)  PRAGMA index_info('index_users_on_login')
+SQL (1.3ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+SQL (0.5ms)  select sqlite_version(*)
+SQL (1.1ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.6ms)  PRAGMA index_list("users")
+SQL (0.8ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (0.6ms)  PRAGMA index_info('index_users_on_login')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+SQL (0.3ms)  select sqlite_version(*)
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (12729.5ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (10136.5ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) 
+SQL (7231.4ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (12330.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (13349.2ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (33935.4ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (15098.1ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (1744.1ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (10995.0ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM "schema_migrations"
+SQL (1400.2ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100411203119')
+SQL (335.9ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100318215128')
+SQL (464.6ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100322103304')
+SQL (541.6ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100313191856')
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (1.9ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'test' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (4.4ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '7dbef42cb863fd144debcfc0a88c004599f6d6bbb4d4a9dad540290e786ab13c8ca41a17ef09eb6bb09033612815bd36298d73f76fa88cfe3568ec9099eb987f') LIMIT 1
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.2ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'test' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.2ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '7dbef42cb863fd144debcfc0a88c004599f6d6bbb4d4a9dad540290e786ab13c8ca41a17ef09eb6bb09033612815bd36298d73f76fa88cfe3568ec9099eb987f') LIMIT 1
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#check_required_fields
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.4ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'test' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.2ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '22cfba5da165c9bb7986f4f756c8b7fe8e7efc1cfef84187737e0799f54def3a56a6c175fbb0103e49ff682f3126c6f5d80e4ced47a71491e7551b5b78381070') LIMIT 1
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#check_required_fields
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.4ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'test' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '6b6ee296d84c763df0495379ccb91f1b6d583409924f7f07a8b78e641bb0fb06e2c83c85436ba8d70c649105ded0755191330230e25438cefd419b7d2b04ac7b') LIMIT 1
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#check_required_fields
+Owner Load (9.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (1.0ms)  SELECT * FROM "owners" LIMIT 1
+Owner Create (7.1ms)  INSERT INTO "owners" ("type_type", "registration_confirm_type", "editable_fields", "created_at", "application_id", "updated_at", "required_fields", "authorization_type", "service_id", "email_edit_type", "password_reset_type", "custom_fields") VALUES('Application', 'none', NULL, '2010-05-05 21:04:51', 11, '2010-05-05 21:04:51', NULL, 'login', NULL, 'none', 'none', NULL)
+Owner Load (1.4ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (2.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.8ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'test' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'f5c0e45b4a688fd1d6e25b3b61e964e57d3f0541152f1ab29e9df473c09e64d230c79ad1d80e5cd5fdda77a8578287b667cedbb82897a6a01e832515ac20ed30') LIMIT 1
+User#check_required_fields
+User Create (5.5ms)  INSERT INTO "users" ("email_not_validated", "password_reset_code_created_on", "created_at", "email_verification_code_created_on", "crypted_password", "password_reset_code", "updated_at", "custom_parameters", "owner_id", "device_id", "password_salt", "full_name", "email_verification_code", "phone", "website", "persistence_token", "login", "email") VALUES(NULL, NULL, '2010-05-05 21:25:34', NULL, NULL, NULL, '2010-05-05 21:25:34', '--- {}
+
+', 1, NULL, NULL, NULL, NULL, NULL, NULL, 'f5c0e45b4a688fd1d6e25b3b61e964e57d3f0541152f1ab29e9df473c09e64d230c79ad1d80e5cd5fdda77a8578287b667cedbb82897a6a01e832515ac20ed30', 'test', NULL)
+SQL (0.5ms)  select sqlite_version(*)
+SQL (5.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (4.3ms)  PRAGMA index_list("owners")
+SQL (0.6ms)  PRAGMA index_list("users")
+SQL (0.3ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (5.1ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_login')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+SQL (0.3ms)  select sqlite_version(*)
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (15.6ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (13.5ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) 
+SQL (15.3ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (16.2ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (10.3ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (11.8ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (16.1ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (14.3ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (7.2ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM "schema_migrations"
+SQL (10.8ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100411203119')
+SQL (4.4ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100318215128')
+SQL (8.5ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100322103304')
+SQL (6.9ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100313191856')
+User Load (1.1ms)  SELECT * FROM "users" 
+User Load (73.0ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (5.4ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+User Load (4.7ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Update (5.0ms)  UPDATE "owners" SET "updated_at" = '2010-05-06 13:02:51', "editable_fields" = NULL, "required_fields" = NULL, "custom_fields" = '--- 
+- cf1
+' WHERE "id" = 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (42.5ms)  SELECT * FROM "users" WHERE (LOWER("users".login) = 'test') LIMIT 1
+Owner Load (0.8ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'a138232f7e3424d53b5cc2bbe4d7e043f4554cddee7eeb59dd8b08546e3369855177608721f3d557eeb88cef1dea72680bc4d90f3cd0a6b812c467436bd605f2' AND "users".id <> 1) LIMIT 1
+User#after_validation_on_update ["crypted_password", "password_salt", "persistence_token"]
+User Load (0.8ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (18.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'ec121e52dd767be1589a7ed68b3c861febdd5bcd4402957cb1fbbd66cea0c16154099e48f3ba3c4780125649197696f63d51cd5f4e0dbebb82cd1a86a7a30802' AND "users".id <> 1) LIMIT 1
+User#after_validation_on_update ["crypted_password", "password_salt", "persistence_token"]
+User#check_required_fields
+User Load (4.9ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '4584fbcd0373e9cb19737e7cfcdd48b1ce007fed9c74811cb8dc96c9d4bd3fc13daf299e74d1303112f751e9d824a8de6b140cc534deb1de8e8d80337a0eab1e' AND "users".id <> 1) LIMIT 1
+User#after_validation_on_update ["crypted_password", "password_salt", "persistence_token"]
+User#check_required_fields
+User#check_editable_fields crypted_password
+User#check_editable_fields errors #<ActiveRecord::Errors:0xb6799620>
+User#check_editable_fields password_salt
+User#check_editable_fields errors #<ActiveRecord::Errors:0xb6799620>
+User#check_editable_fields persistence_token
+User#check_editable_fields errors #<ActiveRecord::Errors:0xb6799620>
+User Update (18.8ms)  UPDATE "users" SET "persistence_token" = '4584fbcd0373e9cb19737e7cfcdd48b1ce007fed9c74811cb8dc96c9d4bd3fc13daf299e74d1303112f751e9d824a8de6b140cc534deb1de8e8d80337a0eab1e', "updated_at" = '2010-05-06 14:14:25', "custom_parameters" = '--- {}
+
+', "password_salt" = 'AI-0KeG6k5RzmisiMRuY', "crypted_password" = 'f4d4c887b9460037c66445e26d2de8339bfc2477d69287eabe3879acbc282be78010b7d5c7076801d6fd08d008b938eec3e96026b93a60974d80b09b4b0c3957' WHERE "id" = 1
+User Load (1.5ms)  SELECT * FROM "users" WHERE (LOWER("users".login) = 'test') LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.8ms)  SELECT * FROM "users" LIMIT 1
+User Load (0.8ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (16.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-05-06 22:17:42) [GET]
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"-9", "controller"=>"users"}
+UsersController#check_id #<ActiveRecord::Errors:0xb691fd3c @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb691f5bc @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @attribute=:id, @message="should be a positive integer", @options={}, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 45ms (View: 3, DB: 0) | 422 Unprocessable Entity [http://localhost/users/-9.xml]
+
+
+Processing UsersController#index to xml (for 127.0.0.1 at 2010-05-06 22:17:59) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"users"}
+User Load (0.8ms)  SELECT * FROM "users" 
+Owner Load (6.8ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Completed in 670ms (View: 591, DB: 8) | 200 OK [http://localhost/users.xml]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 22:19:24) [POST]
+  Parameters: {"login"=>"test"}
+
+ActionController::RoutingError (No route matches "/users.authenticate.xml" with {:method=>:post}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+User Load (2.3ms)  SELECT * FROM "users" LIMIT 1
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 22:20:11) [POST]
+  Parameters: {"owner_id"=>"1", "login"=>"test"}
+
+ActionController::RoutingError (No route matches "/users.authenticate.xml" with {:method=>:post}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 22:20:53) [POST]
+  Parameters: {"owner_id"=>"1", "login"=>"test"}
+
+ActionController::MethodNotAllowed (Only get, put, and delete requests are allowed.):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (118.7ms)
+Rendered rescues/_request_and_response (6.5ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 22:24:57) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 22:35:45) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (102.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UsersController#index to xml (for 127.0.0.1 at 2010-05-06 22:36:01) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"users"}
+User Load (0.8ms)  SELECT * FROM "users" 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Completed in 167ms (View: 74, DB: 2) | 200 OK [http://localhost/users.xml]
+
+
+Processing UsersController#index to xml (for 127.0.0.1 at 2010-05-06 22:37:03) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"users"}
+User Load (0.8ms)  SELECT * FROM "users" 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Completed in 113ms (View: 54, DB: 2) | 200 OK [http://localhost/users.xml]
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 22:42:13) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (345.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-06 22:42:37) [POST]
+  Parameters: {"owner_id"=>"1", "login"=>"test"}
+
+ActionController::MethodNotAllowed (Only get, put, and delete requests are allowed.):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.1ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 22:42:51) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 22:44:07) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Completed in 53ms (View: 6, DB: 0) | 404 Not Found [http://localhost/users/authenticate]
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 22:44:14) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Completed in 124ms (View: 9, DB: 0) | 404 Not Found [http://localhost/users/authenticate]
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 22:45:30) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+NoMethodError (undefined method `find_by_owner_id' for #<Class:0xb6aa7b28>):
+  app/controllers/users_controller.rb:163:in `authenticate'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (147.1ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 22:47:27) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = '1') LIMIT 1
+User Load (14.9ms)  SELECT * FROM "users" WHERE ("users"."login" = 'test') LIMIT 1
+Completed in 456ms (View: 246, DB: 16) | 202 Accepted [http://localhost/users/authenticate]
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 22:48:00) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = '1') LIMIT 1
+User Load (0.9ms)  SELECT * FROM "users" WHERE ("users"."login" = 'test') LIMIT 1
+Completed in 131ms (View: 9, DB: 2) | 202 Accepted [http://localhost/users/authenticate]
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 22:51:34) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = '1') LIMIT 1
+User Load (0.9ms)  SELECT * FROM "users" WHERE ("users"."login" = 'test') LIMIT 1
+Completed in 213ms (View: 24, DB: 2) | 202 Accepted [http://localhost/users/authenticate]
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 22:52:11) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = '1') LIMIT 1
+User Load (1.0ms)  SELECT * FROM "users" WHERE ("users"."login" = 'test') LIMIT 1
+Completed in 119ms (View: 5, DB: 2) | 202 Accepted [http://localhost/users/authenticate]
+
+
+Processing UsersController#identify (for 127.0.0.1 at 2010-05-06 23:07:16) [GET]
+  Parameters: {"action"=>"identify", "controller"=>"users"}
+UsersController#identify
+User Load (0.8ms)  SELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1
+Owner Load (4.9ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+
+NoMethodError (undefined method `logged_out?' for #<User:0xb6816da0>):
+  app/models/user.rb:122:in `method_missing'
+  authlogic (2.1.3) lib/authlogic/session/timeout.rb:61:in `stale?'
+  authlogic (2.1.3) lib/authlogic/session/timeout.rb:70:in `enforce_timeout'
+  authlogic (2.1.3) lib/authlogic/session/callbacks.rb:72:in `after_persisting'
+  authlogic (2.1.3) lib/authlogic/session/persistence.rb:59:in `persisting?'
+  authlogic (2.1.3) lib/authlogic/session/persistence.rb:39:in `find'
+  app/controllers/application_controller.rb:17:in `current_user_session'
+  app/controllers/application_controller.rb:22:in `current_user'
+  app/controllers/users_controller.rb:203:in `identify'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (521.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-06 23:11:53) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = '1') LIMIT 1
+User Load (0.9ms)  SELECT * FROM "users" WHERE ("users"."login" = 'test') LIMIT 1
+Completed in 191ms (View: 12, DB: 2) | 202 Accepted [http://localhost/users/authenticate]
+
+
+Processing UsersController#identify (for 127.0.0.1 at 2010-05-06 23:11:59) [GET]
+  Parameters: {"action"=>"identify", "controller"=>"users"}
+UsersController#identify
+User Load (0.8ms)  SELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+
+NoMethodError (undefined method `logged_out?' for #<User:0xb687277c>):
+  app/models/user.rb:122:in `method_missing'
+  authlogic (2.1.3) lib/authlogic/session/timeout.rb:61:in `stale?'
+  authlogic (2.1.3) lib/authlogic/session/timeout.rb:70:in `enforce_timeout'
+  authlogic (2.1.3) lib/authlogic/session/callbacks.rb:72:in `after_persisting'
+  authlogic (2.1.3) lib/authlogic/session/persistence.rb:59:in `persisting?'
+  authlogic (2.1.3) lib/authlogic/session/persistence.rb:39:in `find'
+  app/controllers/application_controller.rb:17:in `current_user_session'
+  app/controllers/application_controller.rb:22:in `current_user'
+  app/controllers/users_controller.rb:203:in `identify'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (651.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#identify (for 127.0.0.1 at 2010-05-06 23:19:59) [GET]
+  Parameters: {"action"=>"identify", "controller"=>"users"}
+UsersController#identify
+User Load (0.9ms)  SELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+
+ActionView::MissingTemplate (Missing template _user.erb in view path ):
+  app/controllers/users_controller.rb:204:in `identify'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#identify (for 127.0.0.1 at 2010-05-06 23:20:35) [GET]
+  Parameters: {"action"=>"identify", "controller"=>"users"}
+UsersController#identify
+User Load (0.8ms)  SELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1
+Owner Load (5.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+
+ActionView::MissingTemplate (Missing template _user.erb in view path ):
+  app/controllers/users_controller.rb:204:in `identify'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#identify (for 127.0.0.1 at 2010-05-06 23:21:08) [GET]
+  Parameters: {"action"=>"identify", "controller"=>"users"}
+UsersController#identify
+User Load (0.9ms)  SELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1
+Owner Load (2.4ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Completed in 836ms (View: 285, DB: 3) | 200 OK [http://localhost/users/identify]
+User Load (0.8ms)  SELECT * FROM "users" LIMIT 1
+
+
+Processing UsersController#identify (for 127.0.0.1 at 2010-05-06 23:27:54) [GET]
+  Parameters: {"action"=>"identify", "controller"=>"users"}
+UsersController#identify
+User Load (4.1ms)  SELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Completed in 138ms (View: 8, DB: 5) | 200 OK [http://localhost/users/identify]
+
+
+Processing UsersController#identify (for 127.0.0.1 at 2010-05-07 12:04:25) [GET]
+  Parameters: {"action"=>"identify", "controller"=>"users"}
+UsersController#identify
+User Load (0.9ms)  SELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1
+Owner Load (1.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Completed in 422ms (View: 39, DB: 2) | 200 OK [http://localhost/users/identify]
+
+
+Processing UsersController#identify (for 127.0.0.1 at 2010-05-07 12:06:34) [GET]
+  Parameters: {"action"=>"identify", "controller"=>"users"}
+UsersController#identify
+User Load (0.8ms)  SELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1
+Owner Load (8.9ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Completed in 508ms (View: 265, DB: 10) | 200 OK [http://localhost/users/identify]
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-07 12:07:38) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (114.6ms)
+Rendered rescues/_request_and_response (10.4ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing ApplicationController#authenticate (for 127.0.0.1 at 2010-05-07 12:30:59) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+
+SyntaxError (/home/dima/devel/os/yas/mobserv/mobservusers/trunk/newserver/app/controllers/users_controller.rb:5: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+  protect_from_forgery, :except =>  :authenticate
+                                  ^):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (113.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-07 12:32:00) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = '1') LIMIT 1
+User Load (0.8ms)  SELECT * FROM "users" WHERE ("users"."login" = 'test') LIMIT 1
+Completed in 180ms (View: 13, DB: 2) | 202 Accepted [http://localhost/users/authenticate]
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-07 12:32:38) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = '1') LIMIT 1
+User Load (5.0ms)  SELECT * FROM "users" WHERE ("users"."login" = 'test') LIMIT 1
+Completed in 358ms (View: 9, DB: 6) | 202 Accepted [http://localhost/users/authenticate]
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-07 12:32:45) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Owner Load (8.9ms)  SELECT * FROM "owners" WHERE ("owners"."id" = '1') LIMIT 1
+User Load (0.9ms)  SELECT * FROM "users" WHERE ("users"."login" = 'test') LIMIT 1
+Completed in 191ms (View: 12, DB: 10) | 202 Accepted [http://localhost/users/authenticate]
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-07 12:38:38) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = '1') LIMIT 1
+User Load (0.8ms)  SELECT * FROM "users" WHERE ("users"."login" = 'test') LIMIT 1
+Completed in 239ms (View: 21, DB: 2) | 202 Accepted [http://localhost/users/authenticate]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-05-18 17:00:58) [GET]
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"-9", "controller"=>"users"}
+
+Errno::ENOENT (No such file or directory - /home/dima/devel/os/yas/mobserv/mobservusers/trunk/newserver/vendor/plugins/active_scaffold/lib/active_scaffold/locale/de.rb):
+  authlogic (2.1.3) lib/authlogic/i18n/translator.rb:8:in `translate'
+  authlogic (2.1.3) lib/authlogic/i18n.rb:78:in `t'
+  authlogic (2.1.3) lib/authlogic/acts_as_authentic/email.rb:68:in `validates_format_of_email_field_options'
+  authlogic (2.1.3) lib/authlogic/acts_as_authentic/email.rb:74:in `merge_validates_format_of_email_field_options'
+  app/models/user.rb:11
+  authlogic (2.1.3) lib/authlogic/acts_as_authentic/base.rb:33:in `acts_as_authentic'
+  app/models/user.rb:8
+  app/controllers/users_controller.rb:218:in `check_id'
+  app/controllers/users_controller.rb:215:in `check_id'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (1764.0ms)
+Rendered rescues/_request_and_response (21.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index to xml (for 127.0.0.1 at 2010-05-18 17:01:48) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"users"}
+User Load (0.8ms)  SELECT * FROM "users" 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Completed in 221ms (View: 186, DB: 2) | 200 OK [http://localhost/users.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-05-18 17:02:21) [GET]
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"users", "controller"=>"users"}
+UsersController#check_id #<ActiveRecord::Errors:0xb6878b68 @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb68783e8 @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @message="should be a positive integer", @options={}, @attribute=:id, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 63ms (View: 3, DB: 0) | 422 Unprocessable Entity [http://localhost/users/users.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-05-18 17:02:48) [GET]
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"users", "controller"=>"users"}
+UsersController#check_id #<ActiveRecord::Errors:0xb6b397d0 @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb6b382e0 @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @message="should be a positive integer", @options={}, @attribute=:id, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 24ms (View: 2, DB: 0) | 422 Unprocessable Entity [http://localhost/users/users.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-05-18 17:04:06) [GET]
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"users", "controller"=>"users"}
+UsersController#check_id #<ActiveRecord::Errors:0xb6ab67cc @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb6ab604c @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @message="should be a positive integer", @options={}, @attribute=:id, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 94ms (View: 7, DB: 0) | 422 Unprocessable Entity [http://localhost/users/users.xml]
+
+
+Processing UsersController#show to xml (for 127.0.0.1 at 2010-05-18 17:06:22) [GET]
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"users", "controller"=>"users"}
+UsersController#check_id #<ActiveRecord::Errors:0xb6a4a8b0 @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb6a4a130 @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>, @message="should be a positive integer", @options={}, @attribute=:id, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 72ms (View: 6, DB: 0) | 422 Unprocessable Entity [http://localhost/users/users.xml]
+
+
+Processing UsersController#index to xml (for 127.0.0.1 at 2010-05-18 17:07:09) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"users"}
+User Load (0.8ms)  SELECT * FROM "users" 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Completed in 101ms (View: 20, DB: 1) | 200 OK [http://localhost/users.xml]
+
+
+Processing UsersController#index to xml (for 127.0.0.1 at 2010-05-18 17:07:27) [GET]
+  Parameters: {"format"=>"xml", "action"=>"index", "controller"=>"users"}
+User Load (0.8ms)  SELECT * FROM "users" 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Completed in 112ms (View: 38, DB: 2) | 200 OK [http://localhost/users.xml]
+Owner Load (0.8ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"full_name"=>"abcdef", "phone"=>"111111", "website"=>"http://vsespb.ru/", "login"=>"vsespb", "password"=>"8888", "email"=>"victor@vsespb.ru"} {}
+User#attributes= {"full_name"=>"abcdef"} {}
+User#attributes= {"email"=>"victor@vsespb.ru"} {}
+User#attributes= {"login"=>"vsespb"} {}
+User#attributes= {"phone"=>"111111"} {}
+User#attributes= {"website"=>"http://vsespb.ru/"} {}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'victor@vsespb.ru' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'vsespb' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.8ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '68a4b76fc240d7a02ab80fb7b3b19217ccb40325039379423458274741af7bd3ff60b79353b56831949d8fddd2ecbce76cdbbf11832db6971f39f5bfeb232e1b') LIMIT 1
+User#check_required_fields
+User Create (1.3ms)  INSERT INTO "users" ("email_not_validated", "password_reset_code_created_on", "created_at", "email_verification_code_created_on", "crypted_password", "password_reset_code", "updated_at", "custom_parameters", "owner_id", "device_id", "password_salt", "full_name", "email_verification_code", "phone", "website", "persistence_token", "login", "email") VALUES(NULL, NULL, '2010-05-18 13:43:33', NULL, '53890bf6ca1a8c4f7bb5b0dc1da1a353cd13f06d7e4cdd2810978089a0ec3b51b05cd03fffd4473dc6dba5e012d671e428bd29dd35bc7cacc836d220837d35ae', NULL, '2010-05-18 13:43:33', '--- {}
+
+', 1, NULL, 'j9kYk_c52RnkCCiR89P4', 'abcdef', NULL, '111111', 'http://vsespb.ru/', '68a4b76fc240d7a02ab80fb7b3b19217ccb40325039379423458274741af7bd3ff60b79353b56831949d8fddd2ecbce76cdbbf11832db6971f39f5bfeb232e1b', 'vsespb', 'victor@vsespb.ru')
+Owner Load (0.4ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+User#attributes= {"full_name"=>"abcdefgh", "phone"=>"111111", "website"=>"http://vsespb.ru/", "login"=>"vsespb1", "password"=>"8888", "email"=>"victor1@vsespb.ru"} {}
+Owner Load (0.4ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+User#attributes= {"full_name"=>"abcdefgh", "phone"=>"111111", "website"=>"http://vsespb.ru/", "login"=>"vsespb1", "password"=>"8888", "email"=>"victor1@vsespb.ru"} {}
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+User#attributes= {"full_name"=>"abcdefgh"} {}
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+User#attributes= {"email"=>"victor1@vsespb.ru"} {}
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+User#attributes= {"login"=>"vsespb1"} {}
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+User#attributes= {"phone"=>"111111"} {}
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+User#attributes= {"website"=>"http://vsespb.ru/"} {}
+Owner Load (0.2ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+User Load (0.7ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'victor1@vsespb.ru' AND "users".owner_id = 1111) LIMIT 1
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'vsespb1' AND "users".owner_id = 1111) LIMIT 1
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '45700e137c96318c16092c6bde9605b83fddd8ade837f8ec8f51c43c55eb97fbd4eb20f8f46b3b60fff75ea0f1e66ff95b6a86189cb78b1fac4cf762c96f5b1b') LIMIT 1
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+Owner Load (0.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1111) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"full_name"=>"abcdefgh", "phone"=>"111111", "website"=>"http://vsespb.ru/", "login"=>"vsespb1", "password"=>"8888", "email"=>"victor1@vsespb.ru"} {}
+User#attributes= {"full_name"=>"abcdefgh"} {}
+User#attributes= {"email"=>"victor1@vsespb.ru"} {}
+User#attributes= {"login"=>"vsespb1"} {}
+User#attributes= {"phone"=>"111111"} {}
+User#attributes= {"website"=>"http://vsespb.ru/"} {}
+Owner Load (1.4ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'victor1@vsespb.ru' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.9ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'vsespb1' AND "users".owner_id = 1) LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '63e82dc42a0ab2fccdf9db167ce9b95f05ff3c325901f96dea724e24fa17836060480979e16df89debacffd464c94907dacee04a6f085832dac626ac7cb9aab5') LIMIT 1
+User#check_required_fields
+User Create (1.1ms)  INSERT INTO "users" ("email_not_validated", "password_reset_code_created_on", "created_at", "email_verification_code_created_on", "crypted_password", "password_reset_code", "updated_at", "custom_parameters", "owner_id", "device_id", "password_salt", "full_name", "email_verification_code", "phone", "website", "persistence_token", "login", "email") VALUES(NULL, NULL, '2010-05-18 13:51:20', NULL, '40c34b1407b26d00a625b25b049ecf9dc513bf254a7147ae4bec0b77f1790c3fd57de20299bbc47e56828cfc70fbc9ba35c7501fbdb8d72ac7d20448288c2af5', NULL, '2010-05-18 13:51:20', '--- {}
+
+', 1, NULL, 'ktQPTbSlCOQvckAHQvEr', 'abcdefgh', NULL, '111111', 'http://vsespb.ru/', '63e82dc42a0ab2fccdf9db167ce9b95f05ff3c325901f96dea724e24fa17836060480979e16df89debacffd464c94907dacee04a6f085832dac626ac7cb9aab5', 'vsespb1', 'victor1@vsespb.ru')
+
+
+Processing UsersController#create to xml (for 127.0.0.1 at 2010-05-18 18:21:13) [POST]
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"users", "user"=>{"owner_id"=>1, "full_name"=>"abcdefgh2", "website"=>"http://vsespb.ru/", "phone"=>"111111", "login"=>"vsespb2", "password"=>"[FILTERED]", "email"=>"victor2@vsespb.ru"}}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"phone"=>"111111", "website"=>"http://vsespb.ru/", "full_name"=>"abcdefgh2", "password"=>"8888", "login"=>"vsespb2", "email"=>"victor2@vsespb.ru"} {}
+User#attributes= {"full_name"=>"abcdefgh2"} {}
+User#attributes= {"email"=>"victor2@vsespb.ru"} {}
+User#attributes= {"login"=>"vsespb2"} {}
+User#attributes= {"phone"=>"111111"} {}
+User#attributes= {"website"=>"http://vsespb.ru/"} {}
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.4ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'victor2@vsespb.ru' AND "users".owner_id = 1) LIMIT 1
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'vsespb2' AND "users".owner_id = 1) LIMIT 1
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '9e9629476dace06b4e31783900eba47f0bce025a08b34f01861308e1def72e900b69a667554aeeecd3261c7d757230251cd66203a2f085932f7e242d73ad5bff') LIMIT 1
+UsersController#create #<ActiveRecord::Errors:0xb68f1b08 @errors=#<OrderedHash {"full_name"=>[#<ActiveRecord::Error:0xb6ae0220 @base=#<User id: nil, owner_id: 1, device_id: nil, full_name: "abcdefgh2", email: "victor2@vsespb.ru", email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: "vsespb2", crypted_password: "be1e76185e010c1d3550f5bb35e32445c082f27d835984f9c8b...", password_salt: "5M3vWak2l0-xCH-4DXt3", password_reset_code: nil, password_reset_code_created_on: nil, phone: "111111", website: "http://vsespb.ru/", custom_parameters: {}, persistence_token: "9e9629476dace06b4e31783900eba47f0bce025a08b34f01861...", created_at: nil, updated_at: nil>, @message=:invalid, @options={:value=>"abcdefgh2"}, @attribute=:full_name, @type=:invalid>]}>, @base=#<User id: nil, owner_id: 1, device_id: nil, full_name: "abcdefgh2", email: "victor2@vsespb.ru", email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: "vsespb2", crypted_password: "be1e76185e010c1d3550f5bb35e32445c082f27d835984f9c8b...", password_salt: "5M3vWak2l0-xCH-4DXt3", password_reset_code: nil, password_reset_code_created_on: nil, phone: "111111", website: "http://vsespb.ru/", custom_parameters: {}, persistence_token: "9e9629476dace06b4e31783900eba47f0bce025a08b34f01861...", created_at: nil, updated_at: nil>>
+Completed in 318ms (View: 3, DB: 2) | 422 Unprocessable Entity [http://localhost/users.xml]
+User Load (1.4ms)  SELECT * FROM "users" 
+User Load (7.5ms)  SELECT * FROM "users" ORDER BY users.id DESC LIMIT 1
+User Destroy (1.1ms)  DELETE FROM "users" WHERE "id" = 3
+User Load (0.9ms)  SELECT * FROM "users" ORDER BY users.id DESC LIMIT 1
+User Destroy (0.8ms)  DELETE FROM "users" WHERE "id" = 2
+User Load (0.9ms)  SELECT * FROM "users" ORDER BY users.id DESC LIMIT 1
+
+
+Processing UsersController#create to xml (for 127.0.0.1 at 2010-05-18 18:24:20) [POST]
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"users", "user"=>{"owner_id"=>1, "full_name"=>"abcdef", "website"=>"http://vsespb.ru/", "phone"=>"111111", "login"=>"vsespb", "password"=>"[FILTERED]", "email"=>"victor@vsespb.ru"}}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"phone"=>"111111", "website"=>"http://vsespb.ru/", "full_name"=>"abcdef", "password"=>"8888", "login"=>"vsespb", "email"=>"victor@vsespb.ru"} {}
+User#attributes= {"full_name"=>"abcdef"} {}
+User#attributes= {"email"=>"victor@vsespb.ru"} {}
+User#attributes= {"login"=>"vsespb"} {}
+User#attributes= {"phone"=>"111111"} {}
+User#attributes= {"website"=>"http://vsespb.ru/"} {}
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'victor@vsespb.ru' AND "users".owner_id = 1) LIMIT 1
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'vsespb' AND "users".owner_id = 1) LIMIT 1
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'e12211b129c87e7439d0364c548aee77003e7322afea97fa1a02b86f404289600955d3eb92265a0fb3a08c4acbe7df88f1ff66e0cb97bf932b1157ab0a3ac6a3') LIMIT 1
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#check_required_fields
+User Create (1.5ms)  INSERT INTO "users" ("email_not_validated", "password_reset_code_created_on", "created_at", "email_verification_code_created_on", "crypted_password", "password_reset_code", "updated_at", "custom_parameters", "owner_id", "device_id", "password_salt", "full_name", "email_verification_code", "phone", "website", "persistence_token", "login", "email") VALUES(NULL, NULL, '2010-05-18 14:24:20', NULL, 'bfa1831377439639f6de527cbe03392d0ba705e24b03ef0a3fe95dee2a881652bbe22d12d9b5edc8b2d8486ad59e3c6cdf6959fda01d321fb026102cc9f0f0f2', NULL, '2010-05-18 14:24:20', '--- {}
+
+', 1, NULL, 'N0s-2WSnjeyi3q8JvTFC', 'abcdef', NULL, '111111', 'http://vsespb.ru/', 'e12211b129c87e7439d0364c548aee77003e7322afea97fa1a02b86f404289600955d3eb92265a0fb3a08c4acbe7df88f1ff66e0cb97bf932b1157ab0a3ac6a3', 'vsespb', 'victor@vsespb.ru')
+UsersController#create xml sucess
+Completed in 167ms (View: 6, DB: 3) | 201 Created [http://localhost/users.xml]
+User Load (0.9ms)  SELECT * FROM "users" ORDER BY users.id DESC LIMIT 1
+User Destroy (5.1ms)  DELETE FROM "users" WHERE "id" = 4
+
+
+Processing UsersController#create to xml (for 127.0.0.1 at 2010-05-18 18:26:19) [POST]
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"users", "user"=>{"owner_id"=>1, "full_name"=>"abcdef", "website"=>"http://vsespb.ru/", "phone"=>"111111", "login"=>"vsespb", "password"=>"[FILTERED]", "email"=>"victor@vsespb.ru"}}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"phone"=>"111111", "website"=>"http://vsespb.ru/", "full_name"=>"abcdef", "password"=>"8888", "login"=>"vsespb", "email"=>"victor@vsespb.ru"} {}
+User#attributes= {"full_name"=>"abcdef"} {}
+User#attributes= {"email"=>"victor@vsespb.ru"} {}
+User#attributes= {"login"=>"vsespb"} {}
+User#attributes= {"phone"=>"111111"} {}
+User#attributes= {"website"=>"http://vsespb.ru/"} {}
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.4ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'victor@vsespb.ru' AND "users".owner_id = 1) LIMIT 1
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'vsespb' AND "users".owner_id = 1) LIMIT 1
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'ddf6217c382889ef0e3da86f7afc2ab19f0843900fa2dfbd39563bfd598b792da73de31e6436dfc9a265527e4cfba664257ad2225ce6df56e4eb1476c40ca507') LIMIT 1
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+CACHE (0.0ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#check_required_fields
+User Create (1.2ms)  INSERT INTO "users" ("email_not_validated", "password_reset_code_created_on", "created_at", "email_verification_code_created_on", "crypted_password", "password_reset_code", "updated_at", "custom_parameters", "owner_id", "device_id", "password_salt", "full_name", "email_verification_code", "phone", "website", "persistence_token", "login", "email") VALUES(NULL, NULL, '2010-05-18 14:26:20', NULL, '0469464b1b3aa82dd9bafb1752d50f501b6c06dd39fd6a0fe45b2e3cd68bdbec5d5751876904fc8ec613a4d2851eb38c44004f4e2347dd9b67d471c6f681f437', NULL, '2010-05-18 14:26:20', '--- {}
+
+', 1, NULL, 'dpm-FU1ClF3AuJ7ETAEf', 'abcdef', NULL, '111111', 'http://vsespb.ru/', 'ddf6217c382889ef0e3da86f7afc2ab19f0843900fa2dfbd39563bfd598b792da73de31e6436dfc9a265527e4cfba664257ad2225ce6df56e4eb1476c40ca507', 'vsespb', 'victor@vsespb.ru')
+UsersController#create xml sucess
+Completed in 502ms (View: 150, DB: 3) | 201 Created [http://localhost/users.xml]
+SQL (1.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.3ms)  select sqlite_version(*)
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (9.6ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (6.8ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) 
+SQL (7.0ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (7.6ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (7.6ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (7.6ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (7.1ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (7.3ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (6.9ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM "schema_migrations"
+SQL (3.2ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100411203119')
+SQL (3.6ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100318215128')
+SQL (4.1ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100322103304')
+SQL (3.7ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100313191856')
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.8ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (5.4ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (7.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.8ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (1.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+User Load (0.8ms)  SELECT * FROM "users" LIMIT 1
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.8ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+SQL (1.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+Migrating to CreateOwners (20100313191856)
+Migrating to CreateUsers (20100318215128)
+Migrating to AddFiledListsToOwner (20100322103304)
+Migrating to AddIndecesToUsers (20100411203119)
+Migrating to AddFieldsToUser (20100519120607)
+SQL (0.3ms)  select sqlite_version(*)
+SQL (1.4ms)  ALTER TABLE "users" ADD "last_request_at" datetime
+SQL (0.4ms)  INSERT INTO schema_migrations (version) VALUES ('20100519120607')
+SQL (0.6ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.1ms)  PRAGMA index_list("owners")
+SQL (0.5ms)  PRAGMA index_list("users")
+SQL (0.3ms)  PRAGMA index_info('index_users_on_persistence_token')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_password_reset_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_login')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_email_verification_code')
+SQL (0.3ms)  PRAGMA index_info('index_users_on_device_id')
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+SQL (1.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.3ms)  select sqlite_version(*)
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (15.7ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (14.5ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "last_request_at" datetime) 
+SQL (15.3ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (10.9ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (8.1ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (11.2ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (7.3ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (15.1ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (15.7ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM "schema_migrations"
+SQL (10.7ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100519120607')
+SQL (3.7ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100318215128')
+SQL (3.9ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100322103304')
+SQL (4.2ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100313191856')
+SQL (3.1ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100411203119')
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+User Load (0.8ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (1.5ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#after_validation_on_update ["password_reset_code"]
+User#check_required_fields
+User#check_editable_fields password_reset_code
+User#check_editable_fields errors #<ActiveRecord::Errors:0xb68e8a58>
+User Update (6.5ms)  UPDATE "users" SET "updated_at" = '2010-05-31 06:45:23', "custom_parameters" = '--- {}
+
+', "password_reset_code" = 'pw_reset_code' WHERE "id" = 1
+User Load (0.8ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.8ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Sent mail to 
+
+Date: Mon, 31 May 2010 10:53:17 +0400
+From: Notification robot <notificationrobot@users.mob1serv.com>
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+/users/resetpassword/pw_reset_code
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#attributes= {"email"=>"dima@koulikoff.ru"} {}
+User#attributes= {"login"=>"test"} {}
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User Load (0.3ms)  SELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'dima@koulikoff.ru' AND "users".owner_id = 1 AND "users".id <> 1) LIMIT 1
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Owner Load (0.6ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#after_validation_on_update ["email"]
+User#check_required_fields
+User#check_editable_fields email
+User#check_editable_fields errors #<ActiveRecord::Errors:0xb676b130>
+User Update (0.9ms)  UPDATE "users" SET "updated_at" = '2010-05-31 07:18:09', "email" = 'dima@koulikoff.ru', "custom_parameters" = '--- {}
+
+' WHERE "id" = 1
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 11:21:21 +0400
+From: Notification robot <notificationrobot@users.mob1serv.com>
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+/users/resetpassword/pw_reset_code
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 11:36:05 +0400
+From: Notification robot <notificationrobot@users.mob1serv.com>
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+/users/resetpassword/pw_reset_code
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 11:37:48 +0400
+From: Notification robot <notificationrobot@users.mob1serv.com>
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+/users/resetpassword/pw_reset_code
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+ERROR: compiling _run_erb_app47views47notifier47link_to_new_password46erb RAISED compile error
+/home/dima/devel/os/yas/mobserv/mobservusers/trunk/newserver/app/views/notifier/link_to_new_password.erb:5: syntax error, unexpected tASSOC, expecting ')'
+...word_reset_code; :only_path => false ).to_s); @output_buffer...
+                              ^
+Function body:           def _run_erb_app47views47notifier47link_to_new_password46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "Dear "; @output_buffer.concat(( @user.full_name || @user.login ).to_s); @output_buffer.concat "!\n\nPlease click at the following link if you do want to reset your password:\n\n"
+
+
+
+; @output_buffer.concat(( url_for :controller => 'users', :action => 'resetpassword', :id => @user.password_reset_code; :only_path => false ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/dima/devel/os/yas/mobserv/mobservusers/trunk/newserver/app/views/notifier/link_to_new_password.erb:9:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionmailer-2.3.5/lib/action_mailer/base.rb:567:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionmailer-2.3.5/lib/action_mailer/base.rb:553:in `render_message'
+/usr/lib/ruby/gems/1.8/gems/actionmailer-2.3.5/lib/action_mailer/base.rb:493:in `create!'
+/usr/lib/ruby/gems/1.8/gems/actionmailer-2.3.5/lib/action_mailer/base.rb:452:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/actionmailer-2.3.5/lib/action_mailer/base.rb:395:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionmailer-2.3.5/lib/action_mailer/base.rb:395:in `method_missing'
+(irb):4:in `irb_binding'
+/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+/usr/lib/ruby/1.8/irb/workspace.rb:52
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 11:56:45 +0400
+From: Notification robot <notificationrobot@users.mob1serv.com>
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+http://localhost/users/resetpassword/pw_reset_code
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 12:09:54 +0400
+From: Notification robot <notificationrobot@users.mob1serv.com>
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+http://localhost/users/resetpassword/pw_reset_code
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 12:17:05 +0400
+From: Notification robot <notificationrobot@users.mob1serv.com>
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+http://yas.koulikoff.ru/users/resetpassword/pw_reset_code
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 12:17:32 +0400
+From: Notification robot <notificationrobot@users.mob1serv.com>
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+http://yas.koulikoff.ru/users/resetpassword/pw_reset_code
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 12:17:36 +0400
+From: Notification robot <notificationrobot@users.mob1serv.com>
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+http://yas.koulikoff.ru/users/resetpassword/pw_reset_code
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (20.3ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 14:02:50 +0400
+From: Notification robot <notificationrobot@users.mob1serv.com>
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+http://localhost/users/resetpassword/pw_reset_code
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 14:03:12 +0400
+From: Notification robot <notificationrobot@users.mob1serv.com>
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+http://localhost/users/resetpassword/pw_reset_code
+User Load (1.0ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 14:03:32 +0400
+From: notificationrobot@users.mob1serv.com
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+http://localhost/users/resetpassword/pw_reset_code
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 14:07:35 +0400
+From: notificationrobot@users.mob1serv.com
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+http://localhost/users/resetpassword/pw_reset_code
+User Load (0.9ms)  SELECT * FROM "users" LIMIT 1
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+Sent mail to dima@koulikoff.ru
+
+Date: Mon, 31 May 2010 14:10:53 +0400
+From: notificationrobot@users.mob1serv.com
+To: dima@koulikoff.ru
+Subject: Mob1serv: password reset
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dear test!
+
+Please click at the following link if you do want to reset your password:
+
+http://localhost/users/resetpassword/pw_reset_code
+SQL (1.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.3ms)  select sqlite_version(*)
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (9.9ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (7.3ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "last_request_at" datetime) 
+SQL (6.8ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (7.4ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (7.5ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (7.5ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (7.2ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (6.8ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (7.8ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM "schema_migrations"
+SQL (7.5ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100519120607')
+SQL (3.5ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100318215128')
+SQL (4.4ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100322103304')
+SQL (7.0ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100313191856')
+SQL (3.5ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100411203119')
+SQL (1.8ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.3ms)  select sqlite_version(*)
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (10.3ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (9.9ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "last_request_at" datetime) 
+SQL (7.2ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (8.1ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (6.9ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (7.5ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (7.7ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (6.2ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (8.0ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM "schema_migrations"
+SQL (6.8ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100519120607')
+SQL (4.3ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100318215128')
+SQL (3.2ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100322103304')
+SQL (3.7ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100313191856')
+SQL (3.9ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100411203119')
+SQL (1.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.5ms)  SELECT version FROM schema_migrations
+SQL (0.3ms)  select sqlite_version(*)
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (9.9ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (7.0ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "last_request_at" datetime) 
+SQL (7.1ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (7.9ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (7.0ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (7.5ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (7.1ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (7.0ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (7.5ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM "schema_migrations"
+SQL (3.2ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100519120607')
+SQL (3.7ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100318215128')
+SQL (5.2ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100322103304')
+SQL (6.2ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100313191856')
+SQL (3.9ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100411203119')
+SQL (1.3ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.7ms)  SELECT version FROM schema_migrations
+SQL (0.4ms)  select sqlite_version(*)
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (7.9ms)  CREATE TABLE "owners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_type" varchar(255), "application_id" integer, "service_id" integer, "password_reset_type" varchar(255), "email_edit_type" varchar(255), "registration_confirm_type" varchar(255), "authorization_type" varchar(255), "created_at" datetime, "updated_at" datetime, "custom_fields" varchar(255), "required_fields" varchar(255), "editable_fields" varchar(255)) 
+SQL (0.4ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (9.4ms)  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "owner_id" integer, "device_id" integer, "full_name" varchar(255), "email" varchar(255), "email_not_validated" varchar(255), "email_verification_code" varchar(255), "email_verification_code_created_on" datetime, "login" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_reset_code" varchar(255), "password_reset_code_created_on" datetime, "phone" varchar(255), "website" varchar(255), "custom_parameters" text, "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "last_request_at" datetime) 
+SQL (7.8ms)  CREATE INDEX "index_users_on_device_id" ON "users" ("device_id")
+SQL (7.0ms)  CREATE INDEX "index_users_on_email_verification_code" ON "users" ("email_verification_code")
+SQL (7.5ms)  CREATE INDEX "index_users_on_login" ON "users" ("login")
+SQL (8.1ms)  CREATE INDEX "index_users_on_password_reset_code" ON "users" ("password_reset_code")
+SQL (6.6ms)  CREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (6.7ms)  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+SQL (8.0ms)  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+SQL (0.5ms)   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+SQL (0.3ms)  SELECT version FROM "schema_migrations"
+SQL (6.8ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100519120607')
+SQL (4.1ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100318215128')
+SQL (4.0ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100322103304')
+SQL (3.1ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100313191856')
+SQL (5.0ms)  INSERT INTO "schema_migrations" (version) VALUES ('20100411203119')
+
+
+Processing UsersController#authenticate (for 127.0.0.1 at 2010-05-31 18:38:48) [POST]
+  Parameters: {"action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = '1') LIMIT 1
+User Load (0.9ms)  SELECT * FROM "users" WHERE ("users"."login" = 'test') LIMIT 1
+User#check_required_fields
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#check_editable_fields last_request_at
+User#check_editable_fields errors #<ActiveRecord::Errors:0xb673f9a4>
+User Update (0.9ms)  UPDATE "users" SET "updated_at" = '2010-05-31 14:38:48', "custom_parameters" = '--- {}
+
+', "last_request_at" = '2010-05-31 14:38:48' WHERE "id" = 1
+Completed in 179ms (View: 4, DB: 3) | 202 Accepted [http://localhost/users/authenticate]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-31 19:05:58) [GET]
+
+ActionController::RoutingError (No route matches "/resetmypasswordbyemail" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#resetmypasswordbyemail (for 127.0.0.1 at 2010-05-31 19:06:48) [GET]
+  Parameters: {"action"=>"resetmypasswordbyemail", "controller"=>"users"}
+UsersController#check_id #<ActiveRecord::Errors:0xb6824324 @errors=#<OrderedHash {"id"=>[#<ActiveRecord::Error:0xb6823b68 @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil, last_request_at: nil>, @message="should be a positive integer", @options={}, @attribute=:id, @type="should be a positive integer">]}>, @base=#<User id: nil, owner_id: nil, device_id: nil, full_name: nil, email: nil, email_not_validated: nil, email_verification_code: nil, email_verification_code_created_on: nil, login: nil, crypted_password: nil, password_salt: nil, password_reset_code: nil, password_reset_code_created_on: nil, phone: nil, website: nil, custom_parameters: nil, persistence_token: nil, created_at: nil, updated_at: nil, last_request_at: nil>>
+Filter chain halted as [:check_id] rendered_or_redirected.
+Completed in 49ms (View: 2, DB: 0) | 422 Unprocessable Entity [http://localhost/users/resetmypasswordbyemail]
+
+
+Processing UsersController#resetmypasswordbyemail (for 127.0.0.1 at 2010-05-31 19:24:00) [GET]
+  Parameters: {"action"=>"resetmypasswordbyemail", "controller"=>"users"}
+User Load (0.4ms)  SELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1
+Completed in 440ms (View: 1, DB: 0) | 404 Not Found [http://localhost/users/resetmypasswordbyemail]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 13:48:57) [POST]
+  Parameters: {"owner_id"=>"1", "login"=>"test"}
+
+ActionController::MethodNotAllowed (Only get, put, and delete requests are allowed.):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (3.4ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing UsersController#authenticate to xml (for 127.0.0.1 at 2010-06-08 13:50:31) [POST]
+  Parameters: {"format"=>"xml", "action"=>"authenticate", "owner_id"=>"1", "controller"=>"users", "login"=>"test"}
+Owner Load (0.8ms)  SELECT * FROM "owners" WHERE ("owners"."id" = '1') LIMIT 1
+User Load (1.0ms)  SELECT * FROM "users" WHERE ("users"."login" = 'test') LIMIT 1
+User#check_required_fields
+Owner Load (0.7ms)  SELECT * FROM "owners" WHERE ("owners"."id" = 1) 
+User#check_editable_fields last_request_at
+User#check_editable_fields errors #<ActiveRecord::Errors:0xb68c038c>
+User Update (0.8ms)  UPDATE "users" SET "updated_at" = '2010-06-08 09:50:32', "custom_parameters" = '--- {}
+
+', "last_request_at" = '2010-06-08 09:50:32' WHERE "id" = 1
+Completed in 274ms (View: 5, DB: 3) | 202 Accepted [http://localhost/users/authenticate.xml]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-12 01:26:49) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (68.6ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (unprocessable_entity)

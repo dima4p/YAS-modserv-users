@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  type: MyString
+  application_id: 1
+  service_id: 1
+  password_reset_type: MyString
+  email_edit_type: MyString
+  registration_confirm_type: MyString
+  authorization_type: MyString
+
+two:
+  type: MyString
+  application_id: 1
+  service_id: 1
+  password_reset_type: MyString
+  email_edit_type: MyString
+  registration_confirm_type: MyString
+  authorization_type: MyString

@@ -1,0 +1,32 @@
+<h1>Listing owners</h1>
+
+<table>
+  <tr>
+    <th>Type type</th>
+    <th>Application</th>
+    <th>Service</th>
+    <th>Password reset type</th>
+    <th>Email edit type</th>
+    <th>Registration confirm type</th>
+    <th>Authorization type</th>
+  </tr>
+
+<% @owners.each do |owner| %>
+  <tr>
+    <td><%=h owner.type_type %></td>
+    <td><%=h owner.application_id %></td>
+    <td><%=h owner.service_id %></td>
+    <td><%=h owner.password_reset_type %></td>
+    <td><%=h owner.email_edit_type %></td>
+    <td><%=h owner.registration_confirm_type %></td>
+    <td><%=h owner.authorization_type %></td>
+    <td><%= link_to 'Show', owner %></td>
+    <td><%= link_to 'Edit', edit_owner_path(owner) %></td>
+    <td><%= link_to 'Destroy', owner, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New owner', new_owner_path %>
